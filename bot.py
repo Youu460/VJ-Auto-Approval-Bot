@@ -43,7 +43,7 @@ async def op(_, m :Message):
         try:
             invite_link = await app.create_chat_invite_link(int(cfg.CHID))
         except:
-            await m.reply("**Make Sure I Am Admin In Your Channel**")
+            await m.reply("𝙈𝙖𝙠𝙚 𝙎𝙪𝙧𝙚 𝙄 𝘼𝙢 𝘼𝙙𝙢𝙞𝙣 𝙄𝙣 𝙔𝙤𝙪𝙧 𝘾𝙝𝙖𝙣𝙣𝙚𝙡")
             return 
         key = InlineKeyboardMarkup(
             [[
