@@ -48,7 +48,7 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton("⚓️ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url=invite_link.invite_link),
-                InlineKeyboardButton("🍀 Check Again 🍀", callback_data="chk")
+                InlineKeyboardButton("♻️ 𝘾𝙃𝙀𝘾𝙆 𝘼𝙂𝘼𝙄𝙉 ♻️", callback_data="chk")
             ]]
         ) 
         await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join My Update Channel To Use Me.If You Joined The Channel Then Click On Check Again Button To Confirm.**", reply_markup=key)
@@ -70,7 +70,7 @@ async def chk(_, cb : CallbackQuery):
     try:
         await app.get_chat_member(cfg.CHID, cb.from_user.id)
     except:
-        await cb.answer("🙅‍♂️ You are not joined my channel first join channel then check again. 🙅‍♂️", show_alert=True)
+        await cb.answer("👀𝙋𝙡𝙚𝙖𝙨𝙚 𝙅𝙤𝙞𝙣 𝙈𝙮 𝙐𝙥𝙙𝙖𝙩𝙚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙏𝙤 𝙐𝙨𝙚 𝙈𝙚.𝙄𝙛 𝙔𝙤𝙪 𝙅𝙤𝙞𝙣𝙚𝙙 𝙏𝙝𝙚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙏𝙝𝙚𝙣 𝘾𝙡𝙞𝙘𝙠 𝙊𝙣 𝘾𝙝𝙚𝙘𝙠 𝘼𝙜𝙖𝙞𝙣 𝘽𝙪𝙩𝙩𝙤𝙣 𝙏𝙤 𝘾𝙤𝙣𝙛𝙞𝙧𝙢", show_alert=True)
         return 
     keyboard = InlineKeyboardMarkup(
         [[
